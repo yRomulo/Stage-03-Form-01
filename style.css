@@ -16,7 +16,7 @@ body::before {
   z-index: -1;
 }
 
-.page{
+.page {
   width: 1440px;
   margin: auto;
 }
@@ -33,6 +33,7 @@ header h1 {
   font-size: 48px;
   color: white;
   margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 header p {
@@ -45,8 +46,40 @@ header p {
 
 form {
   margin-top: 60px;
-  background: #FAFAFC;
+  background: #fafafc;
   border-radius: 8px;
   min-height: 300px;
+  width: 750px;
+  height: 1084px;
+  padding: 64px;
+}
 
+fieldset {
+  border: none;
+}
+
+.fieldset-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+form fieldset legend {
+  font-family: "Staatliches", sans-serif;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 34px;
+  color: #535971;
+  border-bottom: 1px solid #e6e6f0;
+  width: 100%;
+  padding-bottom: 16px;
+}
+
+.nes {
+  display: flex;
+  gap: 20px;
+}
+
+.nes > div:nth-child(1) {
+  width: 100%;
 }
