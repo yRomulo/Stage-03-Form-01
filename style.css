@@ -17,7 +17,11 @@ body {
 
 body::before {
   content: "";
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> be440492ac711825492ac5b1311225cffa50a7ea
   width: 100%;
   height: 436px;
   background: #535971;
@@ -27,11 +31,17 @@ body::before {
   z-index: -1;
 }
 
+
+
 .page {
   width: 100%;
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
+=======
+  padding: 0 280px;
+>>>>>>> be440492ac711825492ac5b1311225cffa50a7ea
 }
 
 header {
