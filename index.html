@@ -33,27 +33,78 @@
               </div>
             </div>
             <div class="input-wrapper">
-                <label for="inf-email">Email</label>
-                <input type="text" name="" id="inf-email" />
-              </div>
+              <label for="inf-email"
+                >Email <span>(digite um email válido)</span></label
+              >
+              <input type="text" name="" id="inf-email" />
+            </div>
             <div class="input-wrapper">
-                <label for="inf-senha">Senha</label>
-                <input type="text" name="" id="inf-senha" />
-              </div>
+              <label for="inf-senha"
+                >Senha <span>(mínimo de 6 caracteres)</span></label
+              >
+              <input type="password" name="" id="inf-senha" />
+            </div>
           </div>
         </fieldset>
 
         <fieldset>
-        <div class="fieldset-wrapper">
-          <legend>Informações do mentor</legend>
+          <div class="fieldset-wrapper">
+            <legend>Informações do mentor</legend>
 
-          <div class="input-wrapper">
-                <label for="inf-mentor">Nome do seu mentor</label>
-                <input type="text" name="" id="inf-senha" />
+            <div class="input-wrapper">
+              <label for="inf-mentor">Nome do seu mentor</label>
+              <input type="text" name="" id="inf-mentor" />
+            </div>
           </div>
-          
+        </fieldset>
+
+        <fieldset>
+          <div class="fieldset-wrapper">
+            <legend>Seus Horários Disponíveis</legend>
+
+            <fieldset>
+              <legend class="teste">Primeira mentoria</legend>
+              <div class="horario">
+                <div class="input-wrapper">
+                  <label for="inf-data">Data</label>
+                  <input type="date" id="inf-data" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="inf-das">Das</label>
+                  <input type="time" id="inf-das" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="inf-ate">Até</label>
+                  <input type="time" id="inf-ate" />
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend class="teste">Segunda mentoria</legend>
+              <div class="horario">
+                <div class="input-wrapper">
+                  <label for="inf-data">Data</label>
+                  <input type="date" id="inf-data" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="inf-das">Das</label>
+                  <input type="time" id="inf-das" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="inf-ate">Até</label>
+                  <input type="time" id="inf-ate" />
+                </div>
+              </div>
+            </fieldset>
           </div>
+        </fieldset>
+
+        </div>
       </form>
+      <footer>
+        <input class="form-button" type="submit" value="SALVAR">
+      </footer>
     </div>
   </body>
 </html>

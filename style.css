@@ -1,12 +1,23 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea {
   font-family: "Poppins", sans-serif;
+}
+
+body {
   background: #efefef;
 }
 
 body::before {
   content: "";
-  align-items: center;
+  
   width: 100%;
   height: 436px;
   background: #535971;
@@ -16,9 +27,11 @@ body::before {
   z-index: -1;
 }
 
+
+
 .page {
-  width: 1440px;
-  margin: auto;
+  width: 100%;
+  padding: 0 280px;
 }
 
 header {
@@ -47,21 +60,24 @@ header p {
 form {
   margin-top: 60px;
   background: #fafafc;
-  border-radius: 8px;
-  min-height: 300px;
+  border-radius: 20px 20px 0 0;
+  min-height: 100vh;
   width: 750px;
-  height: 1084px;
+
   padding: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
 }
 
 fieldset {
   border: none;
 }
 
-.fieldset-wrapper{
+.fieldset-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 16px;
 }
 
 form fieldset legend {
@@ -73,13 +89,110 @@ form fieldset legend {
   border-bottom: 1px solid #e6e6f0;
   width: 100%;
   padding-bottom: 16px;
+  margin-bottom: 30px;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  font-size: 14px;
+  line-height: 24px;
+  font-family: Poppins;
+  color: #4e4958;
+
+  margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+  margin-left: 12px;
+
+  font-size: 12px;
+  line-height: 20px;
+
+  color: #c1bccc;
+}
+
+.input-wrapper label span:hover {
+  color: #7f7c86;
+}
+
+.input-wrapper input {
+  background: #fafafc;
+
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
+  background: #fafafc;
+
+  height: 56px;
+
+  padding: 0 24px;
+
+  font-size: 16px;
+  line-height: 26px;
+
+  color: #c1bccc;
 }
 
 .nes {
   display: flex;
-  gap: 20px;
+  gap: 22px;
 }
 
-.nes > div:nth-child(1) {
+.nes div {
+  width: 300px;
+}
+
+.teste {
+  border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 34px;
+}
+
+.horario {
+  display: flex;
+  gap: 32px;
+}
+
+.horario > div:nth-child(1) {
   width: 100%;
+}
+
+footer {
+  background: #535971;
+
+  width: 750px;
+  height: 160px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 40px 64px;
+  margin: auto;
+  margin-bottom: 100px;
+
+  border-top: 1px solid #d6d6d6;
+  border-radius: 0 0 20px 20px;
+}
+
+footer .form-button {
+  width: 608px;
+  height: 55px;
+  padding: 15px 40px;
+  gap: 10px;
+  font-family: Staatliches;
+  border-radius: 20px;
+  background: #ff5374;
+  color: white;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+footer .form-button:hover {
+  background: #fa2d56;
 }
